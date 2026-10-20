@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-CbXtAM7H.js";import{Ct as t,Tt as n,ht as r,in as i,wt as a}from"./dexie-cloud-addon.min-71jIEhb8.js";var o=e(i(),1);function s(){!a.current&&t();let[e]=(0,o.useState)(n.current);return e}var c=r(`check`,[[`path`,{d:`M20 6 9 17l-5-5`,key:`1gmf2c`}]]);export{s as n,c as t};

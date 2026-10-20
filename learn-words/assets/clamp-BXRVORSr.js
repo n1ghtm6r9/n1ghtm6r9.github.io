@@ -1,0 +1,1 @@
+function e(e,t,n){return Number.isNaN(e)?t:Math.min(n,Math.max(t,e))}export{e as t};
