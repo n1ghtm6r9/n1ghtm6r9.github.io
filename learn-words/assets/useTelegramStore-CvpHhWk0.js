@@ -1,0 +1,1 @@
+import{mt as e}from"./dexie-cloud-addon.min-D5ODW0AT.js";var t=e(e=>({webApp:null,launch:null,clearLaunch:()=>e({launch:null})}));export{t};
