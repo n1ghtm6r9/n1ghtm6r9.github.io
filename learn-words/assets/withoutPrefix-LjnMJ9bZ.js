@@ -1,1 +1,0 @@
-var e=.9,t=-.5,n=e**(1/t)-1,r=.15,i=.3,a=.4,o=.8,s=.4,c=1.2,l=.35,u=.5,d=.25,f=1825,p=.5;function m(e,t){if(t===null)return e;let n=e.replace(t,``);return n===``?e:n}export{u as a,d as c,n as d,i as f,e as h,l as i,p as l,s as m,r as n,f as o,o as p,c as r,a as s,m as t,t as u};

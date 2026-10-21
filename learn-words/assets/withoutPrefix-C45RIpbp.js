@@ -1,0 +1,1 @@
+function e(e,t){if(t===null)return e;let n=e.replace(t,``);return n===``?e:n}export{e as t};

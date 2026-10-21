@@ -1,0 +1,1 @@
+function e(e){try{window.localStorage.removeItem(e)}catch{}}export{e as t};

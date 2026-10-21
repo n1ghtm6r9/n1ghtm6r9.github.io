@@ -1,0 +1,1 @@
+import{a as e,n as t}from"./index-DCyP2pOB.js";var n=4e3;async function r(){if(!e.getState().session)return;let r,i=new Promise(e=>{r=setTimeout(e,n)});try{await Promise.race([t.request(),i])}finally{clearTimeout(r)}}export{r as t};

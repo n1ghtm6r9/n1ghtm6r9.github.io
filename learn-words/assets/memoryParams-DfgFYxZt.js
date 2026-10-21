@@ -1,0 +1,1 @@
+var e=.9,t=-.5,n=e**(1/t)-1,r=.15,i=.3,a=.4,o=.8,s=.4,c=1.2,l=.35,u=.5,d=.25,f=1825,p=.5;export{f as a,p as c,i as d,o as f,u as i,t as l,e as m,c as n,a as o,s as p,l as r,d as s,r as t,n as u};
