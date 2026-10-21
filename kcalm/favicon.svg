@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="field" cx="0.28" cy="0.12" r="0.95">
+      <stop offset="0" stop-color="#3d7b69"/>
+      <stop offset="1" stop-color="#23493e"/>
+    </radialGradient>
+    <filter id="lift" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0b221c" flood-opacity="0.38"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#field)"/>
+  <g transform="translate(0 0) scale(1)">
+    <circle cx="256" cy="256" r="178" fill="#ffffff" filter="url(#lift)"/>
+    <circle cx="256" cy="256" r="110" fill="#f3f5f2"/>
+    <g fill="none" stroke-width="30" stroke-linecap="round" transform="rotate(-90 256 256)">
+      <circle cx="256" cy="256" r="144" stroke="#edf1ee" stroke-linecap="butt"/>
+      <circle cx="256" cy="256" r="144" stroke="#2f6656" stroke-dasharray="300 904.7786842338604" stroke-dashoffset="0"/>
+      <circle cx="256" cy="256" r="144" stroke="#9cc3b2" stroke-dasharray="200 904.7786842338604" stroke-dashoffset="-360"/>
+      <circle cx="256" cy="256" r="144" stroke="#d9932b" stroke-dasharray="75 904.7786842338604" stroke-dashoffset="-625"/>
+    </g>
+  </g>
+</svg>

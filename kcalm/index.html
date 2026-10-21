@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/kcalm/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f3f5f2" />
+    <meta name="description" content="Дневник калорий: сфотографируйте блюдо — калории посчитаются сами" />
+    <link rel="manifest" href="/kcalm/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/kcalm/apple-touch-icon.png" />
+    <meta name="application-name" content="kcalm" />
+    <meta name="apple-mobile-web-app-title" content="kcalm" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <title>kcalm</title>
+    <script>
+      try {
+        var saved = localStorage.getItem('theme');
+        var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (dark) document.documentElement.classList.add('dark');
+      } catch {}
+    </script>
+    <script type="module" crossorigin src="/kcalm/assets/index-CrcxZmZ5.js"></script>
+    <link rel="stylesheet" crossorigin href="/kcalm/assets/index-DVZ4BJ5h.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
