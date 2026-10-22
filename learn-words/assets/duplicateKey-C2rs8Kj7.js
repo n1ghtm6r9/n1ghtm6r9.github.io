@@ -1,1 +1,0 @@
-import{_t as e}from"./getDb-Cod0C0kS.js";import{t}from"./normalizeTerm-CuplBsX5.js";import{t as n}from"./withoutPrefix-C45RIpbp.js";function r(r,i=`en`){let a=t(r).toLowerCase();return n(a,e[i].identityPrefix)}export{r as t};
