@@ -1,1 +1,0 @@
-import{n as e,v as t}from"./index-B9mf5-oH.js";var n=4e3;async function r(){if(!t.getState().session)return;let r,i=new Promise(e=>{r=setTimeout(e,n)});try{await Promise.race([e.syncNow(),i])}finally{clearTimeout(r)}}export{r as t};
