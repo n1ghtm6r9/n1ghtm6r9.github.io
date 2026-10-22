@@ -1,22 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="32" height="32">
   <defs>
-    <radialGradient id="field" cx="0.28" cy="0.12" r="0.95">
-      <stop offset="0" stop-color="#3d7b69"/>
-      <stop offset="1" stop-color="#23493e"/>
-    </radialGradient>
-    <filter id="lift" x="-25%" y="-25%" width="150%" height="150%">
-      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0b221c" flood-opacity="0.38"/>
-    </filter>
+    <linearGradient id="field" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4f9c83"/>
+      <stop offset="1" stop-color="#1e5043"/>
+    </linearGradient>
+    
   </defs>
   <rect width="512" height="512" rx="116" fill="url(#field)"/>
+  
   <g transform="translate(0 0) scale(1)">
-    <circle cx="256" cy="256" r="178" fill="#ffffff" filter="url(#lift)"/>
-    <circle cx="256" cy="256" r="110" fill="#f3f5f2"/>
-    <g fill="none" stroke-width="30" stroke-linecap="round" transform="rotate(-90 256 256)">
-      <circle cx="256" cy="256" r="144" stroke="#edf1ee" stroke-linecap="butt"/>
-      <circle cx="256" cy="256" r="144" stroke="#2f6656" stroke-dasharray="300 904.7786842338604" stroke-dashoffset="0"/>
-      <circle cx="256" cy="256" r="144" stroke="#9cc3b2" stroke-dasharray="200 904.7786842338604" stroke-dashoffset="-360"/>
-      <circle cx="256" cy="256" r="144" stroke="#d9932b" stroke-dasharray="75 904.7786842338604" stroke-dashoffset="-625"/>
+    <circle cx="256" cy="256" r="214" fill="#ffffff"/>
+    <circle cx="256" cy="256" r="161" fill="none" stroke="#edf1ee" stroke-width="74"/>
+    <path d="M 256.00 58.00 A 198 198 0 0 1 372.38 416.19 L 328.89 356.32 A 124 124 0 0 0 256.00 132.00 Z" fill="#2f6656" stroke="#ffffff" stroke-width="16" stroke-linejoin="round"/>
+    <path d="M 372.38 416.19 A 198 198 0 0 1 103.44 382.21 L 160.46 335.04 A 124 124 0 0 0 328.89 356.32 Z" fill="#9cc3b2" stroke="#ffffff" stroke-width="16" stroke-linejoin="round"/>
+    <path d="M 103.44 382.21 A 198 198 0 0 1 59.56 231.18 L 132.98 240.46 A 124 124 0 0 0 160.46 335.04 Z" fill="#e0a03c" stroke="#ffffff" stroke-width="16" stroke-linejoin="round"/>
+    
+    <g transform="translate(256 256) scale(1.12) translate(-256 -256)" fill="none" stroke="#2f6656" stroke-width="48" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M221 200 V312"/>
+      <path d="M221 266 L289 200"/>
+      <path d="M246.8 240.9 L291 312"/>
     </g>
   </g>
 </svg>
