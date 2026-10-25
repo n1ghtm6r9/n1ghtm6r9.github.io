@@ -1,0 +1,1 @@
+var e=`https://learn-words-bot.n1ghtm6r9.workers.dev`;export{e as t};
