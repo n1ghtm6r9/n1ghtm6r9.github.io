@@ -1,0 +1,1 @@
+import{i as e,n as t}from"./compareLabels-Db8yWUsE.js";var n=15e4;function r(n,r){return n instanceof e&&n.status===401?r.signInExpired:t(n)?r.signInUnreachable:r.aiRequestFailed}function i(n){return n instanceof e||t(n)}export{r as n,n as r,i as t};
