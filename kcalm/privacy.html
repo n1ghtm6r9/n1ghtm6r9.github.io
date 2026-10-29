@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <title>kcalm privacy policy</title>
+    <style>
+      :root {
+        --background: #edf3ef;
+        --foreground: #0d1f19;
+        --muted: #52645c;
+        --primary: #07704f;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --background: #0a1915;
+          --foreground: #e6f4ee;
+          --muted: #8fa89d;
+          --primary: #3ddba6;
+        }
+      }
+
+      body {
+        margin: 0;
+        padding: 32px 16px 48px;
+        background: var(--background);
+        color: var(--foreground);
+        font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      }
+
+      main {
+        max-width: 40rem;
+        margin: 0 auto;
+      }
+
+      article + article {
+        margin-top: 48px;
+        padding-top: 32px;
+        border-top: 1px solid color-mix(in srgb, var(--muted) 35%, transparent);
+      }
+
+      h1 {
+        margin: 0 0 4px;
+        font-size: 24px;
+        font-weight: 600;
+        text-wrap: balance;
+      }
+
+      h2 {
+        margin: 28px 0 8px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      p,
+      ul {
+        margin: 0 0 12px;
+        text-wrap: pretty;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      li + li {
+        margin-top: 6px;
+      }
+
+      .updated {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      a {
+        color: var(--primary);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article lang="en">
+        <h1>kcalm privacy policy</h1>
+        <p class="updated">Updated October 29, 2026</p>
+        <p>
+          kcalm is a calorie diary that runs as a Telegram Mini App at
+          <a href="https://n1ghtm6r9.github.io/kcalm/">n1ghtm6r9.github.io/kcalm</a>. This page explains what it stores and
+          why.
+        </p>
+
+        <h2>What kcalm stores</h2>
+        <ul>
+          <li>Your Telegram account ID and name, to sign you in.</li>
+          <li>Your diary: meals, calories and nutrients, goals, settings and the meal photos you add.</li>
+          <li>
+            Calories burned per day, if you connect a source: the iPhone Shortcut (Apple Health) or a fitness account
+            such as Google Health.
+          </li>
+        </ul>
+
+        <h2>Google user data</h2>
+        <p>
+          When you connect Google, kcalm asks for read-only access to your Google Health activity and fitness data. It
+          uses that access only to read your total calories burned per day and to show them next to the calories you ate.
+          kcalm does not read steps, heart rate, sleep or anything else.
+        </p>
+        <p>
+          kcalm does not sell Google user data, does not use it for advertising and does not transfer it to anyone. No
+          person reads it unless you ask for help with your account or the law requires it. It is never sent to AI models.
+        </p>
+        <p>
+          kcalm's use and transfer of information received from Google APIs adheres to the
+          <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+          including the Limited Use requirements.
+        </p>
+        <p>
+          The access tokens are stored encrypted on the server. When you disconnect, kcalm revokes the access at Google
+          and deletes the tokens.
+        </p>
+
+        <h2>Photos and AI</h2>
+        <p>
+          To estimate calories, kcalm sends a meal photo or description to an AI model: Cloudflare Workers AI by default,
+          or the provider you choose in settings with your own key.
+        </p>
+
+        <h2>Where data lives</h2>
+        <p>
+          The server runs on Cloudflare Workers. The database is on Turso in the EU and photos are on Backblaze B2 in the
+          EU. Other people see your diary only if you share it yourself.
+        </p>
+
+        <h2>Your choices</h2>
+        <ul>
+          <li>Disconnect any calorie source in settings at any time.</li>
+          <li>Delete meals and photos in the app.</li>
+          <li>
+            To delete everything kcalm holds about you, write to
+            <a href="mailto:kcalm.tracker@gmail.com">kcalm.tracker@gmail.com</a>. It is erased within 30 days.
+          </li>
+        </ul>
+
+        <h2>Contact</h2>
+        <p><a href="mailto:kcalm.tracker@gmail.com">kcalm.tracker@gmail.com</a></p>
+      </article>
+
+      <article lang="ru">
+        <h1>Политика конфиденциальности kcalm</h1>
+        <p class="updated">Обновлено 29 октября 2026</p>
+        <p>
+          kcalm — дневник калорий, Telegram Mini App по адресу
+          <a href="https://n1ghtm6r9.github.io/kcalm/">n1ghtm6r9.github.io/kcalm</a>. Здесь написано, что он хранит и
+          зачем.
+        </p>
+
+        <h2>Что хранит kcalm</h2>
+        <ul>
+          <li>ID и имя вашего аккаунта Telegram — чтобы вас узнавать.</li>
+          <li>Дневник: приёмы пищи, калории и БЖУ, цели, настройки и фото еды, которые вы добавили.</li>
+          <li>
+            Сожжённые за день калории, если вы подключили источник: быструю команду iPhone (Apple Health) или фитнес-аккаунт,
+            например Google Health.
+          </li>
+        </ul>
+
+        <h2>Данные Google</h2>
+        <p>
+          При подключении Google kcalm просит доступ только на чтение к данным активности и фитнеса Google Health и берёт
+          оттуда только сожжённые за день калории, чтобы показать их рядом со съеденными. Шаги, пульс, сон и другое kcalm
+          не читает.
+        </p>
+        <p>
+          kcalm не продаёт данные Google, не использует их для рекламы и никому их не передаёт. Люди их не читают, кроме
+          случаев, когда вы сами просите помочь с аккаунтом или этого требует закон. В модели ИИ они не отправляются.
+        </p>
+        <p>
+          Использование и передача данных, полученных через API Google, соответствуют
+          <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+          включая требования Limited Use.
+        </p>
+        <p>
+          Токены доступа хранятся на сервере в зашифрованном виде. При отключении kcalm отзывает доступ в Google и удаляет
+          токены.
+        </p>
+
+        <h2>Фото и ИИ</h2>
+        <p>
+          Чтобы оценить калории, kcalm отправляет фото или описание еды модели ИИ: по умолчанию Cloudflare Workers AI или
+          провайдеру, которого вы выбрали в настройках со своим ключом.
+        </p>
+
+        <h2>Где лежат данные</h2>
+        <p>
+          Сервер работает на Cloudflare Workers, база — на Turso в ЕС, фото — в Backblaze B2 в ЕС. Другие люди видят ваш
+          дневник, только если вы сами им поделились.
+        </p>
+
+        <h2>Что вы можете сделать</h2>
+        <ul>
+          <li>Отключить любой источник калорий в настройках в любой момент.</li>
+          <li>Удалить приёмы пищи и фото в приложении.</li>
+          <li>
+            Чтобы удалить всё, что kcalm о вас хранит, напишите на
+            <a href="mailto:kcalm.tracker@gmail.com">kcalm.tracker@gmail.com</a>. Данные будут стёрты в течение 30 дней.
+          </li>
+        </ul>
+
+        <h2>Контакты</h2>
+        <p><a href="mailto:kcalm.tracker@gmail.com">kcalm.tracker@gmail.com</a></p>
+      </article>
+    </main>
+  </body>
+</html>
