@@ -17,12 +17,19 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <title>Linkup</title>
     <script>
-      try {
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) document.documentElement.classList.add('dark');
-      } catch {}
+      (function () {
+        var stored = null;
+        try {
+          stored = window.localStorage.getItem('linkup.theme');
+        } catch {}
+        try {
+          var dark = stored === 'dark' || (stored !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (dark) document.documentElement.classList.add('dark');
+        } catch {}
+      })();
     </script>
-    <script type="module" crossorigin src="/linkup/assets/index-CBv2BjN9.js"></script>
-    <link rel="stylesheet" crossorigin href="/linkup/assets/index-CmO_-4qE.css">
+    <script type="module" crossorigin src="/linkup/assets/index-2JIqYybP.js"></script>
+    <link rel="stylesheet" crossorigin href="/linkup/assets/index-DLFE3XOQ.css">
   </head>
   <body>
     <div id="root"></div>
