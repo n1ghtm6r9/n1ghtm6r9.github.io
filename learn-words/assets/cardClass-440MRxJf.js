@@ -1,0 +1,1 @@
+var e=`rounded-2xl border border-border/70 bg-card shadow-[0_1px_2px_color-mix(in_oklch,var(--foreground)_6%,transparent),0_12px_30px_-14px_color-mix(in_oklch,var(--foreground)_22%,transparent)]`;export{e as t};

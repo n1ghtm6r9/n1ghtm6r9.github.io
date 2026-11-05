@@ -1,0 +1,1 @@
+import{a as e}from"./compareLabels-Bqr-2cYb.js";import{n as t}from"./index-Bnz_fsCZ.js";var n=4e3;async function r(){if(!e.getState().session)return;let r,i=new Promise(e=>{r=setTimeout(e,n)});try{await Promise.race([t.syncNow(),i])}finally{clearTimeout(r)}}export{r as t};
