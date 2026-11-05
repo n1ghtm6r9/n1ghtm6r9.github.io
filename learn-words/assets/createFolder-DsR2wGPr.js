@@ -1,1 +1,0 @@
-import{t as e}from"./normalizeTerm-4_cYJmYW.js";function t(t,n,r){return{name:e(t),color:n,order:r}}export{t};

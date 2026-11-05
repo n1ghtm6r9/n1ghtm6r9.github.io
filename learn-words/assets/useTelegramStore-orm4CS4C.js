@@ -1,0 +1,1 @@
+import{bt as e}from"./getDb-CPT5SCzx.js";var t=e(e=>({webApp:null,launch:null,clearLaunch:()=>e({launch:null})}));export{t};
