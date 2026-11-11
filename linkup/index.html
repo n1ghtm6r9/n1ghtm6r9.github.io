@@ -18,18 +18,63 @@
     <title>Linkup</title>
     <script>
       (function () {
+        function readJson(text) {
+          try {
+            var value = JSON.parse(text);
+            return value && typeof value === 'object' ? value : null;
+          } catch {
+            return null;
+          }
+        }
+        function readSession(key) {
+          try {
+            return window.sessionStorage.getItem(key);
+          } catch {
+            return null;
+          }
+        }
+        function validColor(color) {
+          return typeof color === 'string' && /^#([0-9a-f]{3}|[0-9a-f]{6})$/i.test(color);
+        }
+        function isColorDark(color) {
+          var rgb = color.replace('#', '');
+          if (rgb.length === 3) rgb = rgb[0] + rgb[0] + rgb[1] + rgb[1] + rgb[2] + rgb[2];
+          var red = parseInt(rgb.substr(0, 2), 16);
+          var green = parseInt(rgb.substr(2, 2), 16);
+          var blue = parseInt(rgb.substr(4, 2), 16);
+          return Math.sqrt(0.299 * red * red + 0.587 * green * green + 0.114 * blue * blue) < 120;
+        }
+        function telegramIsDark() {
+          try {
+            var hash = window.location.hash;
+            var stored = readSession('__telegram__initParams') || '';
+            if (hash.indexOf('tgWebAppPlatform') === -1 && stored.indexOf('tgWebAppPlatform') === -1) return null;
+            var launched = readJson(new URLSearchParams(hash.slice(1)).get('tgWebAppThemeParams')) || {};
+            var changed = readJson(readSession('__telegram__themeParams')) || {};
+            var background = validColor(changed.bg_color) ? changed.bg_color : launched.bg_color;
+            return validColor(background) && isColorDark(background);
+          } catch {
+            return null;
+          }
+        }
         var stored = null;
         try {
           stored = window.localStorage.getItem('linkup.theme');
         } catch {}
         try {
-          var dark = stored === 'dark' || (stored !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          var dark = false;
+          if (stored === 'dark' || stored === 'light') {
+            dark = stored === 'dark';
+          } else {
+            var telegram = telegramIsDark();
+            dark = telegram === null ? window.matchMedia('(prefers-color-scheme: dark)').matches : telegram;
+          }
           if (dark) document.documentElement.classList.add('dark');
         } catch {}
       })();
     </script>
-    <script type="module" crossorigin src="/linkup/assets/index-BbBgInmp.js"></script>
-    <link rel="stylesheet" crossorigin href="/linkup/assets/index-BQY0plRx.css">
+    <script type="module" crossorigin src="/linkup/assets/index-BK9gCsI5.js"></script>
+    <link rel="stylesheet" crossorigin href="/linkup/assets/index-CROSnSnX.css">
   </head>
   <body>
     <div id="root"></div>
