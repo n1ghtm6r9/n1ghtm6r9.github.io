@@ -44,11 +44,18 @@
           var blue = parseInt(rgb.substr(4, 2), 16);
           return Math.sqrt(0.299 * red * red + 0.587 * green * green + 0.114 * blue * blue) < 120;
         }
+        function hasTelegramBridge() {
+          if (window.parent !== window) return true;
+          if (window.TelegramWebviewProxy !== undefined) return true;
+          var external = window.external;
+          return typeof external === 'object' && external !== null && 'notify' in external;
+        }
         function telegramIsDark() {
           try {
             var hash = window.location.hash;
             var stored = readSession('__telegram__initParams') || '';
             if (hash.indexOf('tgWebAppPlatform') === -1 && stored.indexOf('tgWebAppPlatform') === -1) return null;
+            if (!hasTelegramBridge()) return null;
             var launched = readJson(new URLSearchParams(hash.slice(1)).get('tgWebAppThemeParams')) || {};
             var changed = readJson(readSession('__telegram__themeParams')) || {};
             var background = validColor(changed.bg_color) ? changed.bg_color : launched.bg_color;
@@ -73,7 +80,7 @@
         } catch {}
       })();
     </script>
-    <script type="module" crossorigin src="/linkup/assets/index-BK9gCsI5.js"></script>
+    <script type="module" crossorigin src="/linkup/assets/index-C06mUMo3.js"></script>
     <link rel="stylesheet" crossorigin href="/linkup/assets/index-CROSnSnX.css">
   </head>
   <body>

@@ -1,6 +1,23 @@
 {
   "releases": [
     [
+      "assets/dist-SKiBaIeg.js",
+      "assets/index-C06mUMo3.js",
+      "assets/index-CROSnSnX.css",
+      "assets/nunito-cyrillic-ext-wght-normal-D4X5GqEv.woff2",
+      "assets/nunito-cyrillic-wght-normal-CY6AOgYE.woff2",
+      "assets/nunito-latin-ext-wght-normal-CXYtwYOx.woff2",
+      "assets/nunito-latin-wght-normal-BzFMHfZw.woff2",
+      "assets/nunito-vietnamese-wght-normal-U01xdrZh.woff2",
+      "assets/onest-cyrillic-ext-wght-normal-DOFToQv1.woff2",
+      "assets/onest-cyrillic-wght-normal-DayYxulF.woff2",
+      "assets/onest-latin-ext-wght-normal-QAhDxQuo.woff2",
+      "assets/onest-latin-wght-normal-Dun_Rd-l.woff2",
+      "assets/onest-math-wght-normal-Bl4ZGkZl.woff2",
+      "assets/onest-symbols-wght-normal-DxQzqQfC.woff2",
+      "assets/onest-vietnamese-wght-normal-BBxOatbv.woff2"
+    ],
+    [
       "assets/dist-DB0lrKM-.js",
       "assets/index-BK9gCsI5.js",
       "assets/index-CROSnSnX.css",
@@ -21,23 +38,6 @@
       "assets/dist-BWT_h-6-.js",
       "assets/index-BQY0plRx.css",
       "assets/index-BbBgInmp.js",
-      "assets/nunito-cyrillic-ext-wght-normal-D4X5GqEv.woff2",
-      "assets/nunito-cyrillic-wght-normal-CY6AOgYE.woff2",
-      "assets/nunito-latin-ext-wght-normal-CXYtwYOx.woff2",
-      "assets/nunito-latin-wght-normal-BzFMHfZw.woff2",
-      "assets/nunito-vietnamese-wght-normal-U01xdrZh.woff2",
-      "assets/onest-cyrillic-ext-wght-normal-DOFToQv1.woff2",
-      "assets/onest-cyrillic-wght-normal-DayYxulF.woff2",
-      "assets/onest-latin-ext-wght-normal-QAhDxQuo.woff2",
-      "assets/onest-latin-wght-normal-Dun_Rd-l.woff2",
-      "assets/onest-math-wght-normal-Bl4ZGkZl.woff2",
-      "assets/onest-symbols-wght-normal-DxQzqQfC.woff2",
-      "assets/onest-vietnamese-wght-normal-BBxOatbv.woff2"
-    ],
-    [
-      "assets/dist-C48J3GlV.js",
-      "assets/index-DcVeTf2_.css",
-      "assets/index-dQ_fovsl.js",
       "assets/nunito-cyrillic-ext-wght-normal-D4X5GqEv.woff2",
       "assets/nunito-cyrillic-wght-normal-CY6AOgYE.woff2",
       "assets/nunito-latin-ext-wght-normal-CXYtwYOx.woff2",
