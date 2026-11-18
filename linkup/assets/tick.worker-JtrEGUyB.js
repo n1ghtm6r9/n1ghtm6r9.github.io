@@ -1,0 +1,1 @@
+(function(){let e;addEventListener(`message`,t=>{clearInterval(e),e=setInterval(()=>postMessage(null),t.data)})})();
