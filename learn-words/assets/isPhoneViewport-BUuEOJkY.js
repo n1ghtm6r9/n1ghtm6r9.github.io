@@ -1,0 +1,1 @@
+function e(){return typeof window.matchMedia==`function`&&!window.matchMedia(`(min-width: 768px)`).matches}export{e as t};
