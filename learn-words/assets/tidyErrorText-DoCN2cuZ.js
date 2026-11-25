@@ -1,1 +1,0 @@
-import{r as e}from"./isConnectionFailure-BNhYqVtR.js";import{t}from"./aiRequestErrorText-qHE9IaU8.js";function n(n,r){if(n instanceof e){if(n.code===`quota`)return r.tidyQuota;if(n.code===`key`)return r.tidyKeyRejected;if(n.code===`limit`)return r.tidyLimit}return t(n,r)}export{n as t};

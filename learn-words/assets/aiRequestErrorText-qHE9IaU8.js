@@ -1,1 +1,0 @@
-import{r as e,t}from"./isConnectionFailure-BNhYqVtR.js";var n=15e4;function r(n,r){return n instanceof e&&n.status===401?r.signInExpired:t(n)?r.signInUnreachable:r.aiRequestFailed}export{n,r as t};

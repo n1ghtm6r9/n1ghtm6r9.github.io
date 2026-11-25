@@ -1,0 +1,1 @@
+import{r as e,t}from"./isConnectionFailure-dnbdVRXb.js";function n(n){return n instanceof e||t(n)}export{n as t};

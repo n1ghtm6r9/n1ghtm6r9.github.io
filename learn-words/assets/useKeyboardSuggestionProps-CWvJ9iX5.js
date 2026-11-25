@@ -1,1 +1,0 @@
-import{W as e}from"./getDb-CmzuJOZj.js";function t(e){e.preventDefault()}function n(){let t=e(e=>e.keyboardSuggestions),n=t?`on`:`off`;return{autoCapitalize:`none`,autoComplete:n,autoCorrect:n,spellCheck:t}}export{t as n,n as t};
